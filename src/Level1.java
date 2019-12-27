@@ -43,7 +43,6 @@ public class Level1 {
                 for (int j = 0; j < colMtrx; j++) {
                     if (matrixStrs[i][j] != ' ') resStr = resStr + matrixStrs[i][j];
                 }
-                if (i != strMtrx - 1) resStr = resStr + " ";
             }
         }
         return resStr;
