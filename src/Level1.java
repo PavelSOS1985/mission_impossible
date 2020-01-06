@@ -33,18 +33,21 @@ public class Level1 {
                         strMtrx--;
                         it = true;
                     }
-                    if (k < N) matrixStrs[j][i] = str.charAt(k);
-                    else matrixStrs[j][i] = ' ';
+                    if (k < N) {
+                        matrixStrs[j][i] = str.charAt(k);
+                    } else {
+                        matrixStrs[j][i] = '1';
+                    }
                     k++;
                 }
             }
             if (it) strMtrx++;
             for (int i = 0; i < strMtrx; i++) {
                 for (int j = 0; j < colMtrx; j++) {
-                    if (matrixStrs[i][j] != ' ') resStr = resStr + matrixStrs[i][j];
+                    resStr = resStr + matrixStrs[i][j];
                 }
             }
         }
-        return resStr;
+        return resStr.trim();
     }
 }
